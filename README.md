@@ -53,7 +53,7 @@ You finally arrive at the bathroom (it's a several minute walk from the lobby so
     
 You still start at "5" and stop when you're at an edge
 
-### Project 3:
+### Project 3: Function Logic Test
 
 Now that you can think clearly, you move deeper into the labyrinth of hallways and office furniture that makes up this part of Easter Bunny HQ. This must be a graphic design department; the walls are covered in specifications for triangles.
 
@@ -70,3 +70,26 @@ In your puzzle input, how many of the listed triangles are possible?
 Now that you've helpfully marked up their design documents, it occurs to you that triangles are specified in groups of three vertically. Each set of three numbers in a column specifies a triangle. Rows are unrelated.
 
 In your puzzle input, and instead reading by columns, how many of the listed triangles are possible?
+
+### Project 4: List Sort (2 keys, ascending and descending)
+
+Finally, you come across an information kiosk with a list of rooms. Of course, the list is encrypted and full of decoy data, but the instructions to decode the list are barely hidden nearby. Better remove the decoy data first.
+
+Each room consists of an encrypted name (lowercase letters separated by dashes) followed by a dash, a sector ID, and a checksum in square brackets.
+
+A room is real (not a decoy) if the checksum is the five most common letters in the encrypted name, in order, with ties broken by alphabetization.
+
+Of the real rooms from the list above, the sum of their sector IDs is 1514.
+
+What is the sum of the sector IDs of the real rooms?
+
+--- Part Two ---
+
+With all the decoy data out of the way, it's time to decrypt this list and get moving.
+
+The room names are encrypted by a state-of-the-art shift cipher, which is nearly unbreakable without the right software. However, the information kiosk designers at Easter Bunny HQ were not expecting to deal with a master cryptographer like yourself.
+
+To decrypt a room name, rotate each letter forward through the alphabet a number of times equal to the room's sector ID. A becomes B, B becomes C, Z becomes A, and so on. Dashes become spaces.
+
+What is the sector ID of the room where North Pole objects are stored?
+
