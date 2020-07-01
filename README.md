@@ -93,3 +93,39 @@ To decrypt a room name, rotate each letter forward through the alphabet a number
 
 What is the sector ID of the room where North Pole objects are stored?
 
+### Project 5: md5, Hash Values, Yield Function
+
+You are faced with a security door designed by Easter Bunny engineers that seem to have acquired most of their security knowledge by watching hacking movies.
+
+The eight-character password for the door is generated one character at a time by finding the MD5 hash of some Door ID (your puzzle input) and an increasing integer index (starting with 0).
+
+A hash indicates the next character in the password if its hexadecimal representation starts with five zeroes. If it does, the sixth character in the hash is the next character of the password.
+
+Given the actual Door ID, what is the password?
+
+--- Part Two ---
+
+As the door slides open, you are presented with a second door that uses a slightly more inspired security mechanism. Clearly unimpressed by the last version (in what movie is the password decrypted in order?!), the Easter Bunny engineers have worked out a better solution.
+
+Instead of simply filling in the password from left to right, the hash now also indicates the position within the password to fill. You still look for hashes that begin with five zeroes; however, now, the sixth character represents the position (0-7), and the seventh character is the character to put in that position.
+
+A hash result of 000001f means that f is the second character in the password. Use only the first result for each position, and ignore invalid positions.
+
+Given the actual Door ID and this new method, what is the password? Be extra proud of your solution if it uses a cinematic "decrypting" animation.
+
+### Project 6: Transposed List, Dictionary Sort (Reversed and Normal)
+
+omething is jamming your communications with Santa. Fortunately, your signal is only partially jammed, and protocol in situations like this is to switch to a simple repetition code to get the message through.
+
+In this model, the same message is sent repeatedly. You've recorded the repeating message signal (your puzzle input), but the data seems quite corrupted - almost too badly to recover. Almost.
+
+All you need to do is figure out which character is most frequent for each position.
+
+Given the recording in your puzzle input, what is the error-corrected version of the message being sent?
+
+--- Part Two ---
+Of course, that would be the message - if you hadn't agreed to use a modified repetition code instead.
+
+In this modified code, the sender instead transmits what looks like random data, but for each character, the character they actually want to send is slightly less likely than the others. Even after signal-jamming noise, you can look at the letter distributions in each column and choose the least common letter to reconstruct the original message.
+
+Given the recording in your puzzle input and this new decoding methodology, what is the original message that Santa is trying to send?
