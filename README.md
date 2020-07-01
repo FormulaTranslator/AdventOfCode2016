@@ -129,3 +129,12 @@ Of course, that would be the message - if you hadn't agreed to use a modified re
 In this modified code, the sender instead transmits what looks like random data, but for each character, the character they actually want to send is slightly less likely than the others. Even after signal-jamming noise, you can look at the letter distributions in each column and choose the least common letter to reconstruct the original message.
 
 Given the recording in your puzzle input and this new decoding methodology, what is the original message that Santa is trying to send?
+
+### Project 7: 
+
+While snooping around the local network of EBHQ, you compile a list of IP addresses (they're IPv7, of course; IPv6 is much too limited). You'd like to figure out which IPs support TLS (transport-layer snooping).
+
+An IP supports TLS if it has an Autonomous Bridge Bypass Annotation, or ABBA. An ABBA is any four-character sequence which consists of a pair of two different characters followed by the reverse of that pair, such as xyyx or abba. However, the IP also must not have an ABBA within any hypernet sequences, which are contained by square brackets.
+
+How many IPs in your puzzle input support TLS?
+
